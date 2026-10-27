@@ -1,0 +1,23 @@
+services:
+  backend:
+    image: likh1tha/docker-backend-2400031638:latest
+    container_name: carwash-backend
+    ports:
+      - "8001:8001"
+    environment:
+      SERVER_PORT: 8001
+      SPRING_DATASOURCE_URL: jdbc:postgresql://host.docker.internal:5432/carwashdb
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: docker
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: on-failure
+
+  frontend:
+    image: likh1tha/docker-frontend-2400031638:latest
+    container_name: carwash-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: on-failure

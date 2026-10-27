@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212529;
+}
+
+.app-bg {
+  background: #f4f7fb;
+}
+
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.form-control,
+.form-select {
+  padding: 10px 12px;
+}
+
+.table th,
+.table td {
+  padding: 14px 12px;
+  white-space: nowrap;
+}

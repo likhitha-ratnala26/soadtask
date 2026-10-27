@@ -1,0 +1,42 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+target/
+*.local
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Docker
+.dockerignore
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Git
+.git
